@@ -1,6 +1,24 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+/* 视频描述样式 */
+.video-description {
+  background-color: #f0f0f0; /* 背景颜色 */
+  border: 1px solid #ddd; /* 边框 */
+  padding: 5px; /* 内边距 */
+  margin-top: 5px; /* 与视频之间的间隙 */
+  text-align: center; /* 文本居中对齐 */
+  border-radius: 5px; /* 边框圆角 */
+  font-family: Arial, sans-serif; /* 字体样式 */
+  font-size: 14px; /* 字体大小 */
+}
+
+/* 可选: 调整视频元素的样式 */
+video {
+  width: 100%; /* 视频宽度设置为100%，确保填充其父容器 */
+  height: auto; /* 高度自动调整以保持视频比例 */
+  /* 更多样式（如需要） */
+}
 
 
 .footer .icon-link {
