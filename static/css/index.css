@@ -10,21 +10,20 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.5); /* 黑色背景，50%的透明度 */
+  color: #ffffff; /* 白色文字 */
   padding: 5px;
   text-align: center;
   border-radius: 5px;
   font-family: Calibri, Arial, sans-serif;
   font-size: 14px;
-  visibility: hidden; /* 默认隐藏 */
-  opacity: 0;
-  transition: opacity 0.3s; /* 平滑过渡效果 */
+  opacity: 0; /* 默认完全透明 */
+  transition: opacity 0.3s ease-in-out; /* 平滑过渡效果 */
+  pointer-events: none; /* 防止文本框干扰视频的悬停效果 */
 }
 
 .video-container:hover .video-description {
-  visibility: visible; /* 鼠标悬停时显示 */
-  opacity: 1;
+  opacity: 1; /* 鼠标悬停时变为不透明 */
 }
 
 /* 可选: 调整视频元素的样式 */
