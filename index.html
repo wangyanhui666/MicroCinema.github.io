@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CCEdit: Creative and Controllable Video Editing via Diffusion Models</title>
+  <title>MicroCinema: A Divide-and-Conquer Approach for Text-to-Video Generation</title>
 
   <script type="module"
           src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -59,10 +59,10 @@
         <table style="width: 100%; text-align: center;">
           <tr>
             <td style="padding-right: 15px;">
-              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/Interpolation/makeup.mp4"></video>
+              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/0014_A_happy_panda_is_playing_guitar_and_singing.mp4"></video>
             </td>
             <td>
-              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/Interpolation/makeup1-magicReal.mp4"></video>
+              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/0006_A_tiny_finch_on_a_branch_with_spring.mp4"></video>
             </td>
           </tr>
         </table>
@@ -71,12 +71,6 @@
       <br>
 
       <div class="columns is-centered has-text-centered">
-      <h2 class="subtitle has-text-justified">
-        <b>CCEdit is a trident network that can edit videos in a creative and controllable manner.</b> By decouple the video editing process into video consistency maintaining, structure preserving, and appearance editing, CCEdit can achieve high-fidelity video editing results.
-        <br>
-        <br>
-        For the subsequent results, except for the <b>Comparison</b> and <b>Ablation Study</b> section where we use SD-v1.5 as the base model and depth as the structure representation, we typically first edit the center frame using <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a> (which takes about 3 minutes) with personalized T2I models, and then use them as the appearance reference, selecting depth as the structure representation. In this process, both editing the center frame with Stable Diffusion WebUI and the video editing process utilize the same personalized T2I models.
-      </h2>
     </div>
   </div>
 </section>
