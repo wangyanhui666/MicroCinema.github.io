@@ -3,6 +3,7 @@ body {
 }
 .video-container {
   position: relative;
+  display: inline-block; /* 确保容器紧贴内容 */
 }
 
 .video-description {
@@ -10,20 +11,23 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  max-width: 100%; /* 限制最大宽度为容器宽度 */
   background-color: rgba(0, 0, 0, 0.5); /* 黑色背景，50%的透明度 */
   color: #ffffff; /* 白色文字 */
   padding: 5px;
   text-align: center;
   border-radius: 5px;
   font-family: Calibri, Arial, sans-serif;
-  font-size: 14px;
-  opacity: 0; /* 默认完全透明 */
-  transition: opacity 0.3s ease-in-out; /* 平滑过渡效果 */
-  pointer-events: none; /* 防止文本框干扰视频的悬停效果 */
+  font-size: 16px; /* 增大字体大小 */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+  box-sizing: border-box; /* 确保内边距不会使元素超出设定宽度 */
+  overflow: hidden; /* 防止内容溢出 */
 }
 
 .video-container:hover .video-description {
-  opacity: 1; /* 鼠标悬停时变为不透明 */
+  opacity: 1;
 }
 
 /* 可选: 调整视频元素的样式 */
