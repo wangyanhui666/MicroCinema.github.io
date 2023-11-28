@@ -293,3 +293,6 @@ td {
   width: 2000%;
   max-width: none !important;
 }
+.hero.teaser.video-container .container {
+  max-width: 90%;
+}
