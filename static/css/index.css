@@ -12,6 +12,9 @@ body {
   font-family: Calibri, Arial, sans-serif; /* 字体样式，首选Calibri，如果不可用则使用Arial或sans-serif字体 */
   font-size: 14px; /* 字体大小 */
 }
+#video-section .container {
+  max-width: 90%; /* 将最大宽度设置为屏幕宽度的90% */
+}
 
 /* 可选: 调整视频元素的样式 */
 video {
