@@ -1,20 +1,31 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
-/* 视频描述样式 */
-.video-description {
-  background-color: #ffffff; /* 将背景颜色设置为白色 */
-  border: 1px solid #ddd; /* 边框 */
-  padding: 5px; /* 内边距 */
-  margin-top: 5px; /* 与视频之间的间隙 */
-  text-align: center; /* 文本居中对齐 */
-  border-radius: 5px; /* 边框圆角 */
-  font-family: Calibri, Arial, sans-serif; /* 字体样式，首选Calibri，如果不可用则使用Arial或sans-serif字体 */
-  font-size: 14px; /* 字体大小 */
+.video-container {
+  position: relative;
 }
-/* #video-section .container {
-  max-width: 90%; /* 将最大宽度设置为屏幕宽度的90% */
-} */
+
+.video-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 14px;
+  visibility: hidden; /* 默认隐藏 */
+  opacity: 0;
+  transition: opacity 0.3s; /* 平滑过渡效果 */
+}
+
+.video-container:hover .video-description {
+  visibility: visible; /* 鼠标悬停时显示 */
+  opacity: 1;
+}
 
 /* 可选: 调整视频元素的样式 */
 video {
