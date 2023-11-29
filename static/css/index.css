@@ -30,15 +30,23 @@ body {
   right: -0.5em;
 }
 
-.section {
-  padding: 20px 0; /* 在部分的上下添加一些内边距 */
+.image-container {
+  text-align: center; /* 使得容器内的所有内容居中 */
+  width: 90%; /* 设置容器宽度为90%，这将限制了图片和文本的最大宽度 */
+  margin: 0 auto; /* 上下保持0，左右自动，以确保容器在页面中居中 */
 }
 
-.description {
+.centered-image {
+  width: 100%; /* 图片宽度为容器的100%，即实际上为页面宽度的90% */
+  height: auto; /* 高度自动调整以保持图片纵横比 */
+}
+
+.image-description {
   font-size: 16px; /* 设置描述文字的字体大小 */
   line-height: 1.5; /* 设置行间距 */
+  margin: 10px 0; /* 在描述文字上下添加一些外边距 */
+  /* 由于容器宽度限制，文本长度不会超过图片长度 */
 }
-
 
 .video-container {
   position: relative;
