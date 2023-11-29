@@ -2,36 +2,70 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow-x: auto; /* 如果表格宽于屏幕，允许水平滚动 */
-  margin: 20px 0; /* 表格上下的外边距 */
-  display: flex;
-  justify-content: center; /* 使表格在容器内居中 */
+/* 容器样式 */
+.section .container.is-max-desktop {
+  max-width: 100%; /* 调整最大宽度 */
+  margin: auto;
 }
 
+/* 表格容器样式 */
+.table-container {
+  overflow-x: auto; /* 允许水平滚动 */
+}
 
+/* 表格样式 */
+.comparison-table {
+  width: 100%; /* 表格宽度 */
+  border-collapse: collapse; /* 边框合并 */
+  table-layout: fixed; /* 固定表格布局 */
+}
+
+/* 表头和单元格样式 */
 .comparison-table th,
 .comparison-table td {
-  padding: 8px;
-  border: 1px solid #ddd;
-  text-align: left;
+  border: 1px solid #ddd; /* 单元格边框 */
+  padding: 8px; /* 单元格内边距 */
+  text-align: left; /* 文本左对齐 */
 }
 
-.comparison-table th:nth-child(2), 
+/* 表头行样式 */
+.comparison-table thead tr {
+  background-color: #f2f2f2; /* 表头背景色 */
+}
+
+/* 表头单元格样式 */
+.comparison-table th {
+  text-align: center; /* 表头居中 */
+}
+
+/* 设置特定列的宽度 */
+.comparison-table th:nth-child(1),
+.comparison-table td:nth-child(1) {
+  width: 30%;
+}
+
+.comparison-table th:nth-child(2),
 .comparison-table th:nth-child(3),
-.comparison-table th:nth-child(4), 
+.comparison-table th:nth-child(4),
 .comparison-table th:nth-child(5),
-.comparison-table td:nth-child(2), 
+.comparison-table td:nth-child(2),
 .comparison-table td:nth-child(3),
-.comparison-table td:nth-child(4), 
+.comparison-table td:nth-child(4),
 .comparison-table td:nth-child(5) {
-  width: 15%;
+  width: 17.5%;
 }
-.comparison-table th:nth-child(1) {
-  width: 40%;
+
+/* 标题和表格说明样式 */
+.section .title {
+  margin-bottom: 20px; /* 标题下边距 */
 }
+
+.comparison-table caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 
 caption {
   caption-side: top; /* 标题位置 */
