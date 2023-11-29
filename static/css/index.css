@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
@@ -26,7 +26,7 @@ caption {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-}
+} */
 
 
 .authors p {
