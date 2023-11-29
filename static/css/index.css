@@ -23,11 +23,15 @@ th, td {
   text-align: left; /* 文字左对齐 */
 }
 
-th {
-  background-color: #f2f2f2; /* 表头背景色 */
-  color: #333; /* 表头文字颜色 */
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+  width: 15%; /* 设置这些列的宽度为相等 */
 }
 
+/* 调整表头列 */
+th:nth-child(1) {
+  width: 40%; /* 第一列宽度调整，确保总宽度为100% */
+}
 caption {
   caption-side: top; /* 标题位置 */
   font-size: 18px; /* 标题字体大小 */
