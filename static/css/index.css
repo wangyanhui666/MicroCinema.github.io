@@ -2,36 +2,37 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.table-container {
-  width: 100%; /* 容器宽度 */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
   overflow-x: auto; /* 如果表格宽于屏幕，允许水平滚动 */
   margin: 20px 0; /* 表格上下的外边距 */
   display: flex;
   justify-content: center; /* 使表格在容器内居中 */
 }
 
-table {
-  border-collapse: collapse; /* 边框合并，看起来更整洁 */
-  margin: 0; /* 重置表格外边距 */
-  min-width: 60%; /* 表格的最小宽度 */
-  max-width: 95%; /* 表格的最大宽度 */
+
+.comparison-table th,
+.comparison-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
-th, td {
-  border: 1px solid #ddd; /* 单元格边框样式 */
-  padding: 8px; /* 单元格内边距 */
-  text-align: left; /* 文字左对齐 */
+.comparison-table th:nth-child(2), 
+.comparison-table th:nth-child(3),
+.comparison-table th:nth-child(4), 
+.comparison-table th:nth-child(5),
+.comparison-table td:nth-child(2), 
+.comparison-table td:nth-child(3),
+.comparison-table td:nth-child(4), 
+.comparison-table td:nth-child(5) {
+  width: 15%;
+}
+.comparison-table th:nth-child(1) {
+  width: 40%;
 }
 
-th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
-td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
-  width: 15%; /* 设置这些列的宽度为相等 */
-}
-
-/* 调整表头列 */
-th:nth-child(1) {
-  width: 40%; /* 第一列宽度调整，确保总宽度为100% */
-}
 caption {
   caption-side: top; /* 标题位置 */
   font-size: 18px; /* 标题字体大小 */
