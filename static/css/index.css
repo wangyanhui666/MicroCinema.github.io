@@ -2,6 +2,33 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+caption {
+  caption-side: top;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 .authors p {
   font-family: 'Calibri', sans-serif; /* 设置字体为 Calibri */
   font-size: 18px; /* 增大字体大小 */
