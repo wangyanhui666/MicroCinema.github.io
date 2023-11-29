@@ -109,49 +109,17 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="column is-six-fifths">
-        <table style="width: 100%; text-align: center;">
-          <tr>
-            <td style="padding-right: 15px;">
-              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/0014_A_happy_panda_is_playing_guitar_and_singing.mp4"></video>
-            </td>
-            <td>
-              <video muted autoplay="autoplay" loop="loop" src="assets/VideoResults/0006_A_tiny_finch_on_a_branch_with_spring.mp4"></video>
-            </td>
-          </tr>
-        </table>
-        <center>
-          <table class="center">
-            <tr>
-              <td width=50.0% style="text-align:center;">A happy panda is playing guitar and singing loudly.</td>
-              <td style="padding-left: 5px; padding-right: 5px;"></td>
-              <td width=50.0% style="text-align:center;">A tiny finch on a branch with spring flowers on background.</td>
-            </tr>
-          </table>
-        </center>
-      </div>
-      
-      <br>
 
-      <div class="columns is-centered has-text-centered">
-    </div>
-  </div>
-</section> -->
 
 
 <section class="hero video">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 columns is-centered">Promotional Video</h2>
-      <hr>
       <div class="columns is-centered">
-        <div class="column is-full">
-          <div class="video-container">
-            <video controls src="path_to_your_promotional_video.mp4"></video>
-          </div>
+        <h2 class="title is-3 columns is-centered">Promotional Video</h2>
+        <hr>
+        <div class="video-container">
+          <video controls src="path_to_your_promotional_video.mp4"></video>
         </div>
       </div>
     </div>
@@ -160,15 +128,19 @@
   
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract 内容... -->
-    <h2 class="title is-3">Abstract</h2>
-    <div class="content has-text-justified">
-      <p>
-        We present MicroCinema, a straightforward yet effective framework for high-quality and coherent text-to-video generation. Unlike existing approaches that align text prompts with video directly, MicroCinema introduces a Divide-and-Conquer strategy which divides the text-to-video into a two-stage process: text-to-image generation and image&text-to-video generation. This strategy offers two significant advantages. a) It allows us to take full advantage of the recent advances in text-to-image models, such as Stable Diffusion, Midjourney, and DALLE, to generate photorealistic and highly detailed images. b) Leveraging the generated image, the model can allocate less focus to fine-grained appearance details, prioritizing the efficient learning of motion dynamics. 
-      </p>
-      <p>
-        To implement this strategy effectively, we introduce two core designs. First, we propose the <strong>Appearance Injection Network</strong>, enhancing the preservation of the appearance of the given image. Second, we introduce the <strong>Appearance Noise Prior</strong>, a novel mechanism aimed at maintaining the capabilities of pre-trained 2D diffusion models. These design elements empower MicroCinema to generate high-quality videos with precise motion, guided by the provided text prompts. Extensive experiments demonstrate the superiority of the proposed framework. Concretely, MicroCinema achieves <strong>SOTA</strong> zero-shot FVD of <strong>342.86</strong> on UCF-101 and <strong>377.40</strong> on MSR-VTT.
-      </p>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <!-- Abstract 内容... -->
+      <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present MicroCinema, a straightforward yet effective framework for high-quality and coherent text-to-video generation. Unlike existing approaches that align text prompts with video directly, MicroCinema introduces a Divide-and-Conquer strategy which divides the text-to-video into a two-stage process: text-to-image generation and image&text-to-video generation. This strategy offers two significant advantages. a) It allows us to take full advantage of the recent advances in text-to-image models, such as Stable Diffusion, Midjourney, and DALLE, to generate photorealistic and highly detailed images. b) Leveraging the generated image, the model can allocate less focus to fine-grained appearance details, prioritizing the efficient learning of motion dynamics. 
+          </p>
+          <p>
+            To implement this strategy effectively, we introduce two core designs. First, we propose the <strong>Appearance Injection Network</strong>, enhancing the preservation of the appearance of the given image. Second, we introduce the <strong>Appearance Noise Prior</strong>, a novel mechanism aimed at maintaining the capabilities of pre-trained 2D diffusion models. These design elements empower MicroCinema to generate high-quality videos with precise motion, guided by the provided text prompts. Extensive experiments demonstrate the superiority of the proposed framework. Concretely, MicroCinema achieves <strong>SOTA</strong> zero-shot FVD of <strong>342.86</strong> on UCF-101 and <strong>377.40</strong> on MSR-VTT.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -176,151 +148,155 @@
 <!-- 新增的工作介绍部分 -->
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered">
     <!-- 工作介绍内容... -->
     <h2 class="title is-3 columns is-centered">Overall architecture of MicroCinema</h2>
-    <div class="image-container">
-      <img src="assets/images/overall_architecture_final.png" alt="框图描述" class="centered-image">
-      <p class="image-description">
-        <strong>Overall architecture</strong> of our proposed diffusion-based image&text-to-video model in MicroCinema. The proposed <strong>AppearNet</strong> is designed to furnish appearance information for video generation. Furthermore, we introduce the <strong>Appearance Noise Prior</strong>, which involves adding an appropriate amount of the center frame into the noise, enhancing the model's ability to generate videos consistent with the appearance of the conditional image.
-     </p>
+      <div class="image-container">
+        <img src="assets/images/overall_architecture_final.png" alt="框图描述" class="centered-image">
+        <p class="image-description">
+          <strong>Overall architecture</strong> of our proposed diffusion-based image&text-to-video model in MicroCinema. The proposed <strong>AppearNet</strong> is designed to furnish appearance information for video generation. Furthermore, we introduce the <strong>Appearance Noise Prior</strong>, which involves adding an appropriate amount of the center frame into the noise, enhancing the model's ability to generate videos consistent with the appearance of the conditional image.
+       </p>
+      </div>
     </div>
   </div>
 </section>
 <!--   实验表格 -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 columns is-centered">Experiment Results</h2>
-    <div class="table-container">
-      <table class="comparison-table">
-        <caption>Comparison on the zero-shot text-to-video generation performance on UCF-101 and MSR-VTT</caption>
-        <thead>
-          <tr>
-            <th>Methods</th>
-            <th colspan="2">UCF-101</th>
-            <th colspan="2">MSR-VTT</th>
-          </tr>
-          <tr>
-            <th></th>
-            <th>FVD ↓</th>
-            <th>IS ↑</th>
-            <th>FVD ↓</th>
-            <th>CLIPSIM ↑</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="5"><i>Using WebVid-10M and additional data for training</i></td>
-          </tr>
-          <tr>
-            <td>Make-A-Video</td>
-            <td>367.23</td>
-            <td>33.00</td>
-            <td>-</td>
-            <td>0.3049</td>
-          </tr>
-          <tr>
-            <td>VideoFactory</td>
-            <td>410.00</td>
-            <td>-</td>
-            <td>-</td>
-            <td>0.3005</td>
-          </tr>
-          <tr>
-            <td>ModelScope</td>
-            <td>410.00</td>
-            <td>-</td>
-            <td>550.00</td>
-            <td>0.2930</td>
-          </tr>
-          <tr>
-            <td>Lavie</td>
-            <td>526.30</td>
-            <td>-</td>
-            <td>-</td>
-            <td>0.2949</td>
-          </tr>
-          <tr>
-            <td>VidRD</td>
-            <td>363.19</td>
-            <td>39.37</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>PYoCo</td>
-            <td>355.19</td>
-            <td><strong>47.76</strong></td>
-            <td>-</td>
-            <td><strong>0.3204</strong></td>
-          </tr>
-          <tr>
-            <td colspan="5"><i>Using WebVid-10M only for training</i></td>
-          </tr>
-          <tr>
-            <td>LVDM</td>
-            <td>641.80</td>
-            <td>-</td>
-            <td>742.00</td>
-            <td>0.2381</td>
-          </tr>
-          <tr>
-            <td>CogVideo</td>
-            <td>701.59</td>
-            <td>25.27</td>
-            <td>1294</td>
-            <td>0.2631</td>
-          </tr>
-          <tr>
-            <td>MagicVideo</td>
-            <td>699.00</td>
-            <td>-</td>
-            <td>998.00</td>
-            <td>-</td>
-          </tr>
-          <tr>
-            <td>Video LDM</td>
-            <td>550.61</td>
-            <td>33.45</td>
-            <td>-</td>
-            <td>0.2929</td>
-          </tr>
-          <tr>
-            <td>VideoComposer</td>
-            <td>-</td>
-            <td>-</td>
-            <td>580</td>
-            <td>0.2932</td>
-          </tr>
-          <tr>
-            <td>VideoFusion</td>
-            <td>639.90</td>
-            <td>17.49</td>
-            <td>581.00</td>
-            <td>0.2795</td>
-          </tr>
-          <tr>
-            <td>SimDA</td>
-            <td>-</td>
-            <td>-</td>
-            <td>456.00</td>
-            <td>0.2945</td>
-          </tr>
-          <tr>
-            <td>Show-1</td>
-            <td>394.46</td>
-            <td>35.42</td>
-            <td>538.00</td>
-            <td>0.3072</td>
-          </tr>
-          <tr>
-            <td>MicroCinema (Ours)</td>
-            <td><strong>342.86</strong></td>
-            <td>37.46</td>
-            <td><strong>377.40</strong></td>
-            <td>0.2967</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="columns is-centered">
+      <h2 class="title is-3 columns is-centered">Experiment Results</h2>
+      <div class="table-container">
+        <table class="comparison-table">
+          <caption>Comparison on the zero-shot text-to-video generation performance on UCF-101 and MSR-VTT</caption>
+          <thead>
+            <tr>
+              <th>Methods</th>
+              <th colspan="2">UCF-101</th>
+              <th colspan="2">MSR-VTT</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>FVD ↓</th>
+              <th>IS ↑</th>
+              <th>FVD ↓</th>
+              <th>CLIPSIM ↑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5"><i>Using WebVid-10M and additional data for training</i></td>
+            </tr>
+            <tr>
+              <td>Make-A-Video</td>
+              <td>367.23</td>
+              <td>33.00</td>
+              <td>-</td>
+              <td>0.3049</td>
+            </tr>
+            <tr>
+              <td>VideoFactory</td>
+              <td>410.00</td>
+              <td>-</td>
+              <td>-</td>
+              <td>0.3005</td>
+            </tr>
+            <tr>
+              <td>ModelScope</td>
+              <td>410.00</td>
+              <td>-</td>
+              <td>550.00</td>
+              <td>0.2930</td>
+            </tr>
+            <tr>
+              <td>Lavie</td>
+              <td>526.30</td>
+              <td>-</td>
+              <td>-</td>
+              <td>0.2949</td>
+            </tr>
+            <tr>
+              <td>VidRD</td>
+              <td>363.19</td>
+              <td>39.37</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>PYoCo</td>
+              <td>355.19</td>
+              <td><strong>47.76</strong></td>
+              <td>-</td>
+              <td><strong>0.3204</strong></td>
+            </tr>
+            <tr>
+              <td colspan="5"><i>Using WebVid-10M only for training</i></td>
+            </tr>
+            <tr>
+              <td>LVDM</td>
+              <td>641.80</td>
+              <td>-</td>
+              <td>742.00</td>
+              <td>0.2381</td>
+            </tr>
+            <tr>
+              <td>CogVideo</td>
+              <td>701.59</td>
+              <td>25.27</td>
+              <td>1294</td>
+              <td>0.2631</td>
+            </tr>
+            <tr>
+              <td>MagicVideo</td>
+              <td>699.00</td>
+              <td>-</td>
+              <td>998.00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Video LDM</td>
+              <td>550.61</td>
+              <td>33.45</td>
+              <td>-</td>
+              <td>0.2929</td>
+            </tr>
+            <tr>
+              <td>VideoComposer</td>
+              <td>-</td>
+              <td>-</td>
+              <td>580</td>
+              <td>0.2932</td>
+            </tr>
+            <tr>
+              <td>VideoFusion</td>
+              <td>639.90</td>
+              <td>17.49</td>
+              <td>581.00</td>
+              <td>0.2795</td>
+            </tr>
+            <tr>
+              <td>SimDA</td>
+              <td>-</td>
+              <td>-</td>
+              <td>456.00</td>
+              <td>0.2945</td>
+            </tr>
+            <tr>
+              <td>Show-1</td>
+              <td>394.46</td>
+              <td>35.42</td>
+              <td>538.00</td>
+              <td>0.3072</td>
+            </tr>
+            <tr>
+              <td>MicroCinema (Ours)</td>
+              <td><strong>342.86</strong></td>
+              <td>37.46</td>
+              <td><strong>377.40</strong></td>
+              <td>0.2967</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
