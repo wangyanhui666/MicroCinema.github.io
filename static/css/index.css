@@ -12,6 +12,7 @@ body {
 .author {
   position: relative;
   display: inline-block; /* 使得伪元素正确定位 */
+  font-size: 20px; /* 增大作者名字的字体大小 */
 }
 
 .author:after {
