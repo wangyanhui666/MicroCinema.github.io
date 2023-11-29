@@ -56,11 +56,12 @@ body {
 }
 
 .comparison-table caption {
+  caption-side: top; /* 确保标题位于表格顶部 */
   text-align: center; /* 居中标题文本 */
   font-weight: bold; /* 可选：使标题文本加粗 */
   font-size: 18px; /* 可选：调整标题字体大小 */
   margin: 10px 0; /* 在标题上下添加一些外边距 */
-  display: block; /* 将caption作为块级元素显示 */
+  display: table-caption; /* 保持作为表格标题的默认显示 */
 }
 
 
